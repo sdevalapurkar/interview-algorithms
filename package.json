@@ -1,0 +1,19 @@
+{
+  "name": "interview-algorithms",
+  "version": "1.0.0",
+  "description": "interview algorithms and problem practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdevalapurkar/interview-algorithms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdevalapurkar/interview-algorithms/issues"
+  },
+  "homepage": "https://github.com/sdevalapurkar/interview-algorithms#readme"
+}
