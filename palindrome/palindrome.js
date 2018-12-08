@@ -9,11 +9,7 @@ function isPalindrome(str) {
     reversedString += str[x];
   }
 
-  if (reversedString === str) {
-    return true;
-  }
-
-  return false;
+  return reversedString === str;
 }
 
 module.exports = isPalindrome;
