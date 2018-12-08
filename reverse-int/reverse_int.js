@@ -8,10 +8,8 @@ function reverseInt(int) {
     const digit = originalInt % 10;
 
     originalInt = Math.floor(originalInt / 10);
+    reversedInt *= 10;
     reversedInt += digit;
-    if (originalInt > 0) {
-      reversedInt *= 10;
-    }
   }
 
   if (int > 0) {
