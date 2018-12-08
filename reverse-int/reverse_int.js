@@ -12,7 +12,7 @@ function reverseInt(int) {
     reversedInt += digit;
   }
 
-  if (int > 0) {
+  if (int >= 0) {
     return reversedInt;
   }
 
