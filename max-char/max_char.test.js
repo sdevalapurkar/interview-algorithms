@@ -4,8 +4,8 @@ test('returns the character most common to the string', () => {
   expect(maxChar('aaaaabb')).toBe('a');
 });
 
-test('returns null when there is no character most common to the string', () => {
-  expect(maxChar('aann')).toBe(null);
+test('returns the first most common character when there is more than one most common to the string', () => {
+  expect(maxChar('aann')).toBe('a');
 });
 
 test('returns null when the input string is empty', () => {
