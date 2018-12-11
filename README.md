@@ -1,6 +1,7 @@
 # interview-algorithms
 
 ![last-commit](https://img.shields.io/github/last-commit/sdevalapurkar/interview-algorithms.svg)
+![npm](https://img.shields.io/npm/v/sdevalapurkar/interview-algorithms.svg)
 
 Workspace to practice solving fundamental interview problems and improving knowledge of algorithms and complexity.
 
