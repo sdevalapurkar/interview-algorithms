@@ -1,5 +1,9 @@
 const isPalindrome = require('./palindrome');
 
+test('isPalindrome function is defined', () => {
+  expect(isPalindrome).toBeDefined();
+});
+
 test('returns true if the input string is a palindrome', () => {
   expect(isPalindrome('racecar')).toBe(true);
 });

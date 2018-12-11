@@ -1,5 +1,9 @@
 const sum = require('./sum');
 
+test('sum function is defined', () => {
+  expect(sum).toBeDefined();
+});
+
 test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3);
 });

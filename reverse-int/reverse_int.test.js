@@ -1,5 +1,9 @@
 const reverseInt = require('./reverse_int');
 
+test('reverseInt function is defined', () => {
+  expect(reverseInt).toBeDefined();
+});
+
 test('reverses a normal integer', () => {
   expect(reverseInt(123)).toBe(321);
 });

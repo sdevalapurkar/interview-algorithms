@@ -1,5 +1,9 @@
 const maxChar = require('./max_char');
 
+test('maxChar function is defined', () => {
+  expect(maxChar).toBeDefined();
+});
+
 test('returns the character most common to the string', () => {
   expect(maxChar('aaaaabb')).toBe('a');
 });

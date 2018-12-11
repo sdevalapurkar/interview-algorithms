@@ -1,5 +1,9 @@
 const reverseString = require('./reverse_string');
 
+test('reverseString function is defined', () => {
+  expect(reverseString).toBeDefined();
+});
+
 test('reverses a basic string', () => {
   expect(reverseString('hello')).toBe('olleh');
 });
