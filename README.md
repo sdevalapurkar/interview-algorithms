@@ -1,5 +1,7 @@
 # interview-algorithms
 
+![last-commit](https://img.shields.io/github/last-commit/sdevalapurkar/interview-algorithms.svg)
+
 Workspace to practice solving fundamental interview problems and improving knowledge of algorithms and complexity.
 
 ![Interview prep](https://udemy-images.udemy.com/course/750x422/1278360_beb4_3.jpg)
