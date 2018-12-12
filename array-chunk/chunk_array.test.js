@@ -19,3 +19,7 @@ test('chunks a given array as expected', () => {
     [1, 2, 3], [4, 5, 6], [7, 8],
   ]));
 });
+
+test('chunks an empty input array with any given size', () => {
+  expect(chunk([], 8)).toEqual(expect.arrayContaining([]));
+});
