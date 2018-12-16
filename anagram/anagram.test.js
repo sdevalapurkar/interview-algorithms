@@ -23,3 +23,7 @@ test('returns true for two strings that are anagrams despite punctuation', () =>
 
   expect(anagram).toBe(true);
 });
+
+test('returns false when strings are of different length', () => {
+  expect(isAnagram('hello', 'hellos')).toBe(false);
+});
