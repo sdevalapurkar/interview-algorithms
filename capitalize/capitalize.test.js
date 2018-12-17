@@ -12,3 +12,7 @@ test('works with a string that starts with a space', () => {
   expect(capitalize(' hey man How you doinnnn, look it works!'))
     .toBe(' Hey Man How You Doinnnn, Look It Works!');
 });
+
+test('it works with an empty string', () => {
+  expect(capitalize('')).toBe('');
+});
