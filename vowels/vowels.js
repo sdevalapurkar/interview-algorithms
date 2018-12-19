@@ -2,10 +2,10 @@
 
 function getNumVowels(str) {
   let numVowels = 0;
-  const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
 
   for (let x = 0; x < str.length; x += 1) {
-    if (vowels.includes(str[x])) {
+    if (vowels.includes(str[x].toLowerCase())) {
       numVowels += 1;
     }
   }
