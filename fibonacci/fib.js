@@ -1,12 +1,11 @@
 // write a function that outputs the nth value of the fibonacci series
 
 // note that this basic recursive algorithm has exponential runtime
-function slowFibonacciAtN(n) {
+function fibonacciAtN(n) {
   if (n === 0) return 0;
 
   if (n === 1) return 1;
 
-  /* eslint-disable no-use-before-define */
   return fibonacciAtN(n - 1) + fibonacciAtN(n - 2);
 }
 
@@ -26,6 +25,7 @@ function memoize(fn) {
   };
 }
 
-const fibonacciAtN = memoize(slowFibonacciAtN);
+/* eslint-disable no-func-assign */
+fibonacciAtN = memoize(fibonacciAtN);
 
 module.exports = fibonacciAtN;
