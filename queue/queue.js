@@ -13,6 +13,11 @@ class Queue {
   remove() {
     return this.arr.pop();
   }
+
+  peek() {
+    if (!this.arr.length) return null;
+    return this.arr[this.arr.length - 1];
+  }
 }
 
 module.exports = Queue;

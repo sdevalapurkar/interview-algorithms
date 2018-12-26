@@ -21,6 +21,15 @@ test('can remove elements from a queue', () => {
   }).not.toThrow();
 });
 
+test('can peek at last element in queue without removing it', () => {
+  const q = new Queue();
+
+  q.add(1);
+  q.add(3);
+  expect(q.peek()).toEqual(1);
+  expect(q.remove()).toEqual(1);
+});
+
 test('order of elements is maintained', () => {
   const q = new Queue();
   q.add(1);
