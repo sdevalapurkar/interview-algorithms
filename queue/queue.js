@@ -1,5 +1,5 @@
 // create a queue data structure
-// the queue should be a class with methods add and remove
+// the queue should be a class with methods add, peek and remove
 
 class Queue {
   constructor() {
