@@ -25,6 +25,7 @@ describe('Insert First', () => {
     const l = new List();
 
     l.insertFirst(1);
+
     expect(l.head.data).toEqual(1);
   });
 
@@ -32,9 +33,11 @@ describe('Insert First', () => {
     const l = new List();
 
     l.insertFirst(1);
+
     expect(l.head.data).toEqual(1);
 
     l.insertFirst(2);
+
     expect(l.head.data).toEqual(2);
   });
 });
@@ -74,5 +77,24 @@ describe('Get Last', () => {
     l.insertFirst(3);
 
     expect(l.getLast().data).toEqual(1);
+  });
+});
+
+describe('Clear', () => {
+  test('empties out the list', () => {
+    const l = new List();
+
+    expect(l.size()).toEqual(0);
+
+    l.insertFirst(1);
+    l.insertFirst(1);
+    l.insertFirst(1);
+    l.insertFirst(1);
+
+    expect(l.size()).toEqual(4);
+
+    l.clear();
+
+    expect(l.size()).toEqual(0);
   });
 });
