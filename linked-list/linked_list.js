@@ -12,6 +12,33 @@ class LinkedList {
   constructor() {
     this.head = null;
   }
+
+  insertFirst(data) {
+    const newNode = new Node(data);
+
+    if (!this.head) {
+      this.head = newNode;
+    } else {
+      const currNode = this.head;
+
+      newNode.next = currNode;
+      this.head = newNode;
+    }
+  }
+
+  size() {
+    let counter = 1;
+    let currNode = this.head;
+
+    if (!currNode) return 0;
+
+    while (currNode.next) {
+      counter += 1;
+      currNode = currNode.next;
+    }
+
+    return counter;
+  }
 }
 
 module.exports = { Node, LinkedList };
