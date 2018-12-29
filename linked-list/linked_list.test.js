@@ -53,3 +53,26 @@ describe('Size', () => {
     expect(l.size()).toEqual(4);
   });
 });
+
+describe('Get First', () => {
+  test('returns the first node of the linked list', () => {
+    const l = new List();
+
+    l.insertFirst(1);
+    l.insertFirst(2);
+
+    expect(l.getFirst().data).toEqual(2);
+  });
+});
+
+describe('Get Last', () => {
+  test('returns the last node of the linked list', () => {
+    const l = new List();
+
+    l.insertFirst(1);
+    l.insertFirst(2);
+    l.insertFirst(3);
+
+    expect(l.getLast().data).toEqual(1);
+  });
+});
