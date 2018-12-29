@@ -138,6 +138,38 @@ class LinkedList {
       }
     }
   }
+
+  insertAt(data, index) {
+    const newNode = new Node(data);
+    let nodeBeforeIndex = this.head;
+    let currNode = this.head;
+    let counter = 0;
+
+    while (counter !== index) {
+      if (counter === index - 1) {
+        nodeBeforeIndex = currNode;
+      }
+
+      if (currNode.next) {
+        currNode = currNode.next;
+        counter += 1;
+      } else {
+        currNode = null;
+        counter = index;
+      }
+    }
+
+    if (currNode) {
+      if (nodeBeforeIndex === currNode) {
+        this.insertFirst(data);
+      } else if (currNode.next) {
+        nodeBeforeIndex.next = newNode;
+        newNode.next = currNode;
+      }
+    } else {
+      this.insertLast(data);
+    }
+  }
 }
 
 module.exports = { Node, LinkedList };
