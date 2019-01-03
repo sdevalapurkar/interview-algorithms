@@ -3,6 +3,10 @@ const midpoint = require('./midpoint');
 
 const List = L.LinkedList;
 
+test('midpoint function is defined', () => {
+  expect(midpoint).toBeDefined();
+});
+
 test('returns the middle node when the list has an odd number of nodes', () => {
   const l = new List();
 
