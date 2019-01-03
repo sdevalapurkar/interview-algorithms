@@ -351,3 +351,24 @@ describe('InsertAt', () => {
     expect(l.getAt(2).data).toEqual('hi');
   });
 });
+
+describe('forEach', () => {
+  test('applies a transform to each node', () => {
+    const l = new List();
+
+    l.insertLast(1);
+    l.insertLast(2);
+    l.insertLast(3);
+    l.insertLast(4);
+
+    l.forEach((node) => {
+      const x = node;
+      x.data += 10;
+    });
+
+    expect(l.getAt(0).data).toEqual(11);
+    expect(l.getAt(1).data).toEqual(12);
+    expect(l.getAt(2).data).toEqual(13);
+    expect(l.getAt(3).data).toEqual(14);
+  });
+});

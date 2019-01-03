@@ -170,6 +170,17 @@ class LinkedList {
       this.insertLast(data);
     }
   }
+
+  forEach(fn) {
+    let currNode = this.head;
+    let counter = 0;
+
+    while (currNode) {
+      fn(currNode, counter);
+      currNode = currNode.next;
+      counter += 1;
+    }
+  }
 }
 
 module.exports = { Node, LinkedList };
