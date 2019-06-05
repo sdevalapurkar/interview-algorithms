@@ -1,4 +1,4 @@
-# interview-algorithms
+# Interview Algorithms
 
 ![last-commit](https://img.shields.io/github/last-commit/sdevalapurkar/interview-algorithms.svg)
 
